@@ -1,0 +1,23 @@
+* "simulator" "HSPICE" 
+* "version" "F-2011.09-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "12:25:02 12/03/2013 "
+* "netlist" "HW5Prob3.sp "
+* "runtitle" ".title hw5prob3"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ n1 =   1.8000        
++ n10 =   1.1205        
++ n2 =   1.5580        
++ n3 = 900.0000m       
++ n4 = 900.0000m       
++ n5 = 342.4590m       
++ n6 = 342.4590m       
++ n7 = 580.0000m       
++ n8 =   1.0000        
++ n9 =   1.1205        
+***   END: Saved Operating Point ***                     

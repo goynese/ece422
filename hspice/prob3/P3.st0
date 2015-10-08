@@ -1,0 +1,68 @@
+***** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******
+ Input File: P3.sp
+ lic:
+ lic: FLEXlm: v10.8
+ lic: USER:   goynese              HOSTNAME: kec1130-14.engr.oregonstate.edu
+ lic: HOSTID: 24be0511c109         PID:      10797
+ lic: Using FLEXlm license file:
+ lic: 7188@license.eecs.oregonstate.edu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 11-aug-2014/2013.03
+ lic: 14(in_use)/50(total) FLOATING license(s) on SERVER license.eecs.oregonstat
+ lic:
+ init: begin read circuit files,  cpu clock=  5.00E-02
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/ad
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/ad
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/behave
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/bjt
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/burr_brn
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/comlinear
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/dio
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/fet
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/lin_tech
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/pci
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/signet
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/ti
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/tline
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/xilinx
+       option runlvl
+       option post
+ init: end read circuit files,  cpu clock=  5.00E-02 memory=    149 kb
+ init: begin check errors,  cpu clock=  5.00E-02
+ init: end check errors,  cpu clock=  5.00E-02 memory=    159 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  5.00E-02
+       establish matrix -- done,  cpu clock=  5.00E-02 memory=    165 kb
+       re-order matrix -- done,  cpu clock=  5.00E-02 memory=    167 kb
+ init: end setup matrix,  cpu clock=  5.00E-02 memory=    184 kb
+ dcop: begin dcop,  cpu clock=  5.00E-02
+ dcop: end dcop,  cpu clock=  5.00E-02 memory=    184 kb  tot_iter=      14
+ output: P3.ac0
+ sweep: ac ac0    begin, #sweeps= 601 cpu clock=  5.00E-02
+ ac: frequency=    1.02E+03
+ ac: frequency=    3.98E+03
+ ac: frequency=    1.58E+04
+ ac: frequency=    6.31E+04
+ ac: frequency=    2.51E+05
+ ac: frequency=    1.00E+06
+ ac: frequency=    3.98E+06
+ ac: frequency=    1.58E+07
+ ac: frequency=    6.31E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    1.00E+09
+ sweep: ac ac0    end,  cpu clock=  6.00E-02 memory=    192 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

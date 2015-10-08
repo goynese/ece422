@@ -1,0 +1,1261 @@
+Using: /usr/local/apps/synopsys/current_hspice/hspice/linux/hspice hw2.sp
+ ****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+  Copyright (C) 2011 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: hw2.sp                                                            
+  Command line options: hw2.sp
+ lic:  
+ lic: FLEXlm: v10.8 
+ lic: USER:   goynese              HOSTNAME: kec1130-14.engr.oregonstate.edu 
+ lic: HOSTID: 24be0511c109         PID:      8954 
+ lic: Using FLEXlm license file: 
+ lic: 7188@license.eecs.oregonstate.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 11-aug-2014/2013.03 
+ lic: 6(in_use)/50(total) FLOATING license(s) on SERVER license.eecs.oregonstate
+ lic:   
+ Init: read install configuration file: /usr/local/apps/synopsys/current_hspice/hspice/meta.cfg
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  mos   model parameters tnom=  25.000 temp=  25.000 *****
+ ***************************************************************************
+ ***        model parameters  model name:   0:n_18     model type:nmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+      hspver=    2006.03               level=         49         
+     version=        3.1            paramchk=          0         
+      apwarn=          1                lite=          0         
+      vgslim=          0             binUnit=          1         
+      capMod=          2               xpart=        0.5         
+      mobMod=          1              nqsMod=          0         
+      stiMod=          0                 elm=          5         
+    sfvtflag=          0                 tox=    4.1e-09 meter   
+          xj=      1e-07 meter       binflag=          0         
+        lmin=          0 meter          lmax=          0 meter   
+        wmin=          0 meter          wmax=          0 meter   
+        lref=          0 meter          wref=          0 meter   
+        lint=7.65986e-09 meter          wint=          0 meter   
+       lmult=          1               wmult=          1         
+          ll=          0                 lln=          1         
+          lw=          0                 lwn=          1         
+         lwl=          0                  wl=          0         
+         wln=          1                  ww=          0         
+         wwn=          1                 wwl=          0         
+         dwg=-1.17694e-08 m/V             dwb=1.96583e-08 m/V^1/2 
+          xl=          0                  xw=     -1e-08         
+          a0=          2                 ags=   0.428182 V^-1    
+          b0=-4.43566e-09 meter            b1=     -1e-07 meter   
+        keta=-0.00873409 V^-1           voff= -0.0909514 V       
+       ngate=          0 cm^-3           vbx=          0 V       
+         vbm=         -3 V                xt=   1.55e-07 meter   
+        vth0=   0.376033 V               nch= 2.3549e+17 cm^-3   
+        nsub=      6e+16 cm^-3           nlx=1.83658e-07 meter   
+      gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+          k1=   0.598252 V^1/2            k2= 0.00204285         
+          k3=      0.001                 k3b=    5.47338 V^-1    
+          w0=      1e-07 meter          dvt0=    1.38283         
+        dvt1=   0.374633                dvt2=  0.0524724 V^-1    
+       dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+       dvt2w=          0 V^-1           dsub= 0.00880778         
+        eta0=  0.0029649                etab=9.02839e-05 V^-1    
+          u0=    265.099 cm^2/V/sec         ua=-1.34288e-09 m/V     
+          ub=2.21876e-18 (m/V)^2          uc=5.30227e-11 V^-1    
+        vsat=      99674 m/sec            a1=0.000117788 v^-1    
+          a2=          1               delta=       0.01 V       
+        rdsw=        150 ohm-um         prwg=        0.5 V^-1    
+        prwb=       -0.2 V^-1/2           wr=          1         
+        pclm=   0.739383             pdiblc1=   0.240506         
+     pdiblc2= 0.00238467             pdiblcb=       -0.1 V^-1    
+      pscbe1=2.25061e+09 V/m          pscbe2=5.50405e-09 V/m     
+       drout=   0.810147                pvag= 0.00820885         
+     nfactor=    2.47421                cdsc=    0.00024 f/m^2   
+       cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+         cit=          0 f/m^2        alpha0=          0 m/V     
+       beta0=         30 V               dlc=7.65986e-09 meter   
+         dwc=          0 meter           clc=      1e-07 meter   
+         cle=        0.6                cgso=   7.68e-10 f/m     
+        cgdo=   7.68e-10 f/m            cgbo=      1e-12 f/m     
+        cgsl=          0 f/m            cgdl=          0 f/m     
+      ckappa=        0.6                  cf=          0 f/m     
+        tnom=     300.15 K               kt1=      -0.11 V       
+        kt1l=          0                 kt2=      0.022         
+         ute=       -1.5                 ua1=   4.31e-09 m/V     
+         ub1=  -7.61e-18 (m/V)^2         uc1=   -5.6e-11 m/V^2   
+          at=      33000 m/s             prt=          0         
+         using Berkeley noise model       noiMod=          1         
+        noia=      1e+20                noib=      50000         
+        noic=   -1.4e-12                  em=    4.1e+07         
+          ef=          1                  af=          1         
+          kf=          0              gdsnoi=-1.23457e-29         
+         using Hspice diodes            using ACM 
+         acm=         0                 hdif=         0 meter    
+        ldif=         0 meter             js=         0 amp/m^2  
+         jsw=         0 amp/m            xti=         0          
+           n=         1                   cj=0.00096236 f/m^2    
+          mj=  0.380501                   pb=       0.8 V        
+        cjsw=2.37186e-10 f/m             mjsw=  0.107791          
+         php=       0.8 V               pbsw (not used)           
+      cjgate=2.37186e-10 f/m            cjswg (not used)           
+       mjswg (not used)                 pbswg (not used)           
+       lketa=-0.00944713               wketa= 0.00500085         
+       pketa=-0.00308008               pvth0=-0.000919017         
+         pk2=0.000320258               peta0=9.33065e-05         
+         pu0=    32.7094                 pua=1.35883e-10         
+       pvsat=    2004.06               prdsw=         -5         
+ ***************************************************************************
+ ***        model parameters  model name:   0:p_18     model type:pmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+      hspver=    2006.03               level=         49         
+     version=        3.1            paramchk=          0         
+      apwarn=          1                lite=          0         
+      vgslim=          0             binUnit=          1         
+      capMod=          2               xpart=        0.5         
+      mobMod=          1              nqsMod=          0         
+      stiMod=          0                 elm=          5         
+    sfvtflag=          0                 tox=    4.1e-09 meter   
+          xj=      1e-07 meter       binflag=          0         
+        lmin=          0 meter          lmax=          0 meter   
+        wmin=          0 meter          wmax=          0 meter   
+        lref=          0 meter          wref=          0 meter   
+        lint=2.40594e-08 meter          wint=          0 meter   
+       lmult=          1               wmult=          1         
+          ll=          0                 lln=          1         
+          lw=          0                 lwn=          1         
+         lwl=          0                  wl=          0         
+         wln=          1                  ww=          0         
+         wwn=          1                 wwl=          0         
+         dwg=-4.41769e-08 m/V             dwb=6.97017e-09 m/V^1/2 
+          xl=          0                  xw=     -1e-08         
+          a0=    1.84138                 ags=   0.400689 V^-1    
+          b0=7.65708e-07 meter            b1=2.52826e-06 meter   
+        keta=  0.0145743 V^-1           voff= -0.0984894 V       
+       ngate=          0 cm^-3           vbx=          0 V       
+         vbm=         -3 V                xt=   1.55e-07 meter   
+        vth0=  -0.404077 V               nch= 4.1589e+17 cm^-3   
+        nsub=      6e+16 cm^-3           nlx=1.06879e-07 meter   
+      gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+          k1=   0.583367 V^1/2            k2=  0.0301169         
+          k3=          0                 k3b=    16.2021 V^-1    
+          w0=      1e-06 meter          dvt0=   0.556918         
+        dvt1=   0.246075                dvt2=        0.1 V^-1    
+       dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+       dvt2w=          0 V^-1           dsub=    1.02253         
+        eta0=   0.152158                etab=  -0.099095 V^-1    
+          u0=    116.046 cm^2/V/sec         ua=1.55704e-09 m/V     
+          ub=      1e-21 (m/V)^2          uc=     -1e-10 V^-1    
+        vsat=     199463 m/sec            a1=   0.373167 v^-1    
+          a2=        0.3               delta=       0.01 V       
+        rdsw=    287.511 ohm-um         prwg=        0.5 V^-1    
+        prwb=  -0.135487 V^-1/2           wr=          1         
+        pclm=     2.1661             pdiblc1=3.20891e-05         
+     pdiblc2=  0.0164807             pdiblcb=     -0.001 V^-1    
+      pscbe1=9.01974e+09 V/m          pscbe2=2.60511e-09 V/m     
+       drout=          0                pvag=         15         
+     nfactor=     1.8964                cdsc=    0.00024 f/m^2   
+       cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+         cit=          0 f/m^2        alpha0=          0 m/V     
+       beta0=         30 V               dlc=2.40594e-08 meter   
+         dwc=          0 meter           clc=      1e-07 meter   
+         cle=        0.6                cgso=   5.75e-10 f/m     
+        cgdo=   5.75e-10 f/m            cgbo=      1e-12 f/m     
+        cgsl=          0 f/m            cgdl=          0 f/m     
+      ckappa=        0.6                  cf=          0 f/m     
+        tnom=     300.15 K               kt1=      -0.11 V       
+        kt1l=          0                 kt2=      0.022         
+         ute=       -1.5                 ua1=   4.31e-09 m/V     
+         ub1=  -7.61e-18 (m/V)^2         uc1=   -5.6e-11 m/V^2   
+          at=      33000 m/s             prt=          0         
+         using Berkeley noise model       noiMod=          1         
+        noia=    9.9e+18                noib=       2400         
+        noic=    1.4e-12                  em=    4.1e+07         
+          ef=          1                  af=          1         
+          kf=          0              gdsnoi=-1.23457e-29         
+         using Hspice diodes            using ACM 
+         acm=         0                 hdif=         0 meter    
+        ldif=         0 meter             js=         0 amp/m^2  
+         jsw=         0 amp/m            xti=         0          
+           n=         1                   cj=0.00116394 f/m^2    
+          mj=  0.419416                   pb=  0.865987 V        
+        cjsw=1.65613e-10 f/m             mjsw=  0.368302          
+         php=  0.865987 V               pbsw (not used)           
+      cjgate=1.65613e-10 f/m            cjswg (not used)           
+       mjswg (not used)                 pbswg (not used)           
+       lketa=-0.00294233               wketa=  0.0266507         
+       pketa=-0.00367958               pvth0= 0.00185699         
+         pk2= 0.00155429               peta0=0.000100316         
+         pu0=    -1.1074                 pua=-4.96912e-11         
+         pub=      1e-21               pvsat=        -50         
+       prdsw=   -1.14585         
+ 
+
+  **warning** (hw2.sp:34) Unable to find referenced node vic; Output variable ignored. Specify a valid node.
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       =-500.0000m 0:a       =-303.2677m
+ +0:b       = 489.1387m 0:vds     = 900.0000m 0:vi1     =-500.0000m
+ +0:vi2     =-500.0000m 0:vout    = 489.1387m 0:vp      =-898.5954m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m -500.0000m    0.       900.0000m
+  current -160.3229u    0.         0.      -160.3229u
+  power    144.2906u    0.         0.       144.2906u
+
+     total voltage source power dissipation=  288.5812u       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region       Cutoff     Cutoff     Cutoff     Cutoff     Linear   Saturati
+  id         5.8857u    5.8857u   -5.8857u   -5.8857u   11.7713u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      398.5954m  398.5954m -410.8613m -410.8613m  596.7323m  596.7323m
+  vds        1.3877     1.3877  -410.8613m -410.8613m    1.4046m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      452.0595m  452.0595m -455.4840m -455.4840m  463.0058m  458.2686m
+  vdsat     39.3312m   39.3312m  -44.3205m  -44.3205m  111.0001m  114.0173m
+  vod      -53.4641m  -53.4641m   44.6227m   44.6227m  133.7266m  138.4637m
+  beta      34.6823m   34.6823m   19.4627m   19.4627m   78.8195m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm       139.1355u  139.1355u  133.8913u  133.8913u  104.9303u    2.0415m
+  gds        1.4784u    1.4784u    1.1323u    1.1323u    8.3233m   22.4676u
+  gmb       41.6373u   41.6373u   44.4993u   44.4993u   30.5715u  570.7887u
+  cdtot     95.3420f   95.3420f  174.7160f  174.7160f  457.6923f   58.4274f
+  cgtot    182.3320f  182.3320f  313.6787f  313.6787f  749.9723f  171.3297f
+  cstot    130.3535f  130.3535f  240.1832f  240.1832f  386.3641f  124.8754f
+  cbtot    176.7281f  176.7281f  341.8517f  341.8517f  463.1738f  106.8589f
+  cgs       83.3539f   83.3539f  156.7410f  156.7410f  432.9594f  136.8810f
+  cgd       45.3822f   45.3822f   69.0056f   69.0056f  307.7441f   25.8282f
+
+
+
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =   -5.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       =-500.0000m 0:a       =-303.2677m
+ +0:b       = 489.1387m 0:vds     = 900.0000m 0:vi1     =-500.0000m
+ +0:vi2     =-500.0000m 0:vout    = 489.1387m 0:vp      =-898.5954m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m -500.0000m    0.       900.0000m
+  current -160.3229u    0.         0.      -160.3229u
+  power    144.2906u    0.         0.       144.2906u
+
+     total voltage source power dissipation=  288.5812u       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region       Cutoff     Cutoff     Cutoff     Cutoff     Linear   Saturati
+  id         5.8857u    5.8857u   -5.8857u   -5.8857u   11.7713u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      398.5954m  398.5954m -410.8613m -410.8613m  596.7323m  596.7323m
+  vds        1.3877     1.3877  -410.8613m -410.8613m    1.4046m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      452.0595m  452.0595m -455.4840m -455.4840m  463.0058m  458.2686m
+  vdsat     39.3312m   39.3312m  -44.3205m  -44.3205m  111.0001m  114.0173m
+  vod      -53.4641m  -53.4641m   44.6227m   44.6227m  133.7266m  138.4637m
+  beta      34.6823m   34.6823m   19.4627m   19.4627m   78.8195m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm       139.1355u  139.1355u  133.8913u  133.8913u  104.9303u    2.0415m
+  gds        1.4784u    1.4784u    1.1323u    1.1323u    8.3233m   22.4676u
+  gmb       41.6373u   41.6373u   44.4993u   44.4993u   30.5715u  570.7887u
+  cdtot     95.3420f   95.3420f  174.7160f  174.7160f  457.6923f   58.4274f
+  cgtot    182.3320f  182.3320f  313.6787f  313.6787f  749.9723f  171.3297f
+  cstot    130.3535f  130.3535f  240.1832f  240.1832f  386.3641f  124.8754f
+  cbtot    176.7281f  176.7281f  341.8517f  341.8517f  463.1738f  106.8589f
+  cgs       83.3539f   83.3539f  156.7410f  156.7410f  432.9594f  136.8810f
+  cgd       45.3822f   45.3822f   69.0056f   69.0056f  307.7441f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =   -4.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       =-400.0000m 0:a       =-303.2677m
+ +0:b       = 393.7559m 0:vds     = 900.0000m 0:vi1     =-400.0000m
+ +0:vi2     =-400.0000m 0:vout    = 393.7559m 0:vp      =-888.9795m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m -400.0000m    0.       900.0000m
+  current -236.6171u    0.         0.      -236.6171u
+  power    212.9554u    0.         0.       212.9554u
+
+     total voltage source power dissipation=  425.9109u       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati     Linear   Saturati
+  id        44.0328u   44.0328u  -44.0328u  -44.0328u   88.0656u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      488.9795m  488.9795m -506.2441m -506.2441m  596.7323m  596.7323m
+  vds        1.2827     1.2827  -506.2441m -506.2441m   11.0205m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      452.8872m  452.8872m -455.4824m -455.4824m  462.9300m  458.2686m
+  vdsat     59.7097m   59.7097m  -74.5651m  -74.5651m  111.0483m  114.0173m
+  vod       36.0923m   36.0923m  -50.7617m  -50.7617m  133.8023m  138.4637m
+  beta      34.7991m   34.7991m   19.2271m   19.2271m   78.8191m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm       919.1580u  919.1580u  807.7514u  807.7514u  810.2233u    2.0415m
+  gds        9.3407u    9.3407u    6.8290u    6.8290u    7.5469m   22.4676u
+  gmb      264.8151u  264.8151u  263.1867u  263.1867u  235.3016u  570.7887u
+  cdtot     95.5816f   95.5816f  171.7386f  171.7386f  436.4864f   58.4274f
+  cgtot    259.0324f  259.0324f  466.5829f  466.5829f  745.7067f  171.3297f
+  cstot    188.1732f  188.1732f  355.0315f  355.0315f  401.0256f  124.8754f
+  cbtot    178.6964f  178.6964f  341.9773f  341.9773f  460.5115f  106.8589f
+  cgs      186.9963f  186.9963f  363.9648f  363.9648f  447.6961f  136.8810f
+  cgd       44.7777f   44.7777f   69.0432f   69.0432f  287.5323f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =   -3.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       =-300.0000m 0:a       =-303.2677m
+ +0:b       = 316.1891m 0:vds     = 900.0000m 0:vi1     =-300.0000m
+ +0:vi2     =-300.0000m 0:vout    = 316.1891m 0:vp      =-855.1449m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m -300.0000m    0.       900.0000m
+  current -447.0846u    0.         0.      -447.0846u
+  power    402.3761u    0.         0.       402.3761u
+
+     total voltage source power dissipation=  804.7523u       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati     Linear   Saturati
+  id       149.2665u  149.2665u -149.2665u -149.2665u  298.5330u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      555.1449m  555.1449m -583.8109m -583.8109m  596.7323m  596.7323m
+  vds        1.1713     1.1713  -583.8109m -583.8109m   44.8551m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      453.7654m  453.7654m -455.4811m -455.4811m  462.6634m  458.2686m
+  vdsat     91.2992m   91.2992m -119.6888m -119.6888m  111.2178m  114.0173m
+  vod      101.3795m  101.3795m -128.3298m -128.3298m  134.0689m  138.4637m
+  beta      34.9564m   34.9564m   18.8856m   18.8856m   78.8177m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         2.4511m    2.4511m    1.9277m    1.9277m    3.1009m    2.0415m
+  gds       24.4922u   24.4922u   18.7434u   18.7434u    4.9295m   22.4676u
+  gmb      691.6041u  691.6041u  628.4628u  628.4628u  890.1787u  570.7887u
+  cdtot     96.1086f   96.1086f  169.5324f  169.5324f  354.2622f   58.4274f
+  cgtot    289.9163f  289.9163f  513.5306f  513.5306f  721.2479f  171.3297f
+  cstot    211.0449f  211.0449f  389.7484f  389.7484f  448.2225f  124.8754f
+  cbtot    179.6263f  179.6263f  339.9231f  339.9231f  449.1959f  106.8589f
+  cgs      228.4926f  228.4926f  427.5583f  427.5583f  494.8729f  136.8810f
+  cgd       44.5363f   44.5363f   69.0807f   69.0807f  208.9610f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =   -2.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       =-200.0000m 0:a       =-303.2677m
+ +0:b       = 274.8105m 0:vds     = 900.0000m 0:vi1     =-200.0000m
+ +0:vi2     =-200.0000m 0:vout    = 274.8105m 0:vp      =-788.2860m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m -200.0000m    0.       900.0000m
+  current -634.7643u    0.         0.      -634.7643u
+  power    571.2878u    0.         0.       571.2878u
+
+     total voltage source power dissipation=    1.1426m       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati     Linear   Saturati
+  id       243.1063u  243.1063u -243.1063u -243.1063u  486.2127u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      588.2860m  588.2860m -625.1895m -625.1895m  596.7323m  596.7323m
+  vds        1.0631     1.0631  -625.1895m -625.1895m  111.7140m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      454.6187m  454.6187m -455.4804m -455.4804m  462.1367m  458.2686m
+  vdsat    110.9634m  110.9634m -147.9647m -147.9647m  111.5532m  114.0173m
+  vod      133.6673m  133.6673m -169.7092m -169.7092m  134.5956m  138.4637m
+  beta      35.0422m   35.0422m   18.6777m   18.6777m   78.8150m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         3.4118m    3.4118m    2.5553m    2.5553m    6.3062m    2.0415m
+  gds       34.3881u   34.3881u   27.5945u   27.5945u    1.1724m   22.4676u
+  gmb      954.9222u  954.9222u  837.3268u  837.3268u    1.7773m  570.7887u
+  cdtot     96.7814f   96.7814f  168.4185f  168.4185f  261.5616f   58.4274f
+  cgtot    294.8992f  294.8992f  518.9877f  518.9877f  679.7015f  171.3297f
+  cstot    214.7308f  214.7308f  393.8022f  393.8022f  482.4356f  124.8754f
+  cbtot    180.1180f  180.1180f  338.2766f  338.2766f  432.1938f  106.8589f
+  cgs      235.3837f  235.3837f  435.4380f  435.4380f  529.1327f  136.8810f
+  cgd       44.5002f   44.5002f   69.0962f   69.0962f  121.3821f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =   -1.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       =-100.0000m 0:a       =-303.2677m
+ +0:b       = 266.3360m 0:vds     = 900.0000m 0:vi1     =-100.0000m
+ +0:vi2     =-100.0000m 0:vout    = 266.3360m 0:vp      =-695.6992m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m -100.0000m    0.       900.0000m
+  current -679.6005u    0.         0.      -679.6005u
+  power    611.6405u    0.         0.       611.6405u
+
+     total voltage source power dissipation=    1.2233m       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
+  id       265.5245u  265.5245u -265.5245u -265.5245u  531.0490u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      595.6992m  595.6992m -633.6640m -633.6640m  596.7323m  596.7323m
+  vds      962.0352m  962.0352m -633.6640m -633.6640m  204.3008m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      455.4153m  455.4153m -455.4802m -455.4802m  461.4072m  458.2686m
+  vdsat    115.1932m  115.1932m -153.9271m -153.9271m  112.0182m  114.0173m
+  vod      140.2838m  140.2838m -178.1838m -178.1838m  135.3251m  138.4637m
+  beta      35.0621m   35.0621m   18.6345m   18.6345m   78.8112m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         3.6052m    3.6052m    2.6779m    2.6779m    7.3642m    2.0415m
+  gds       36.7260u   36.7260u   29.5633u   29.5633u  204.2727u   22.4676u
+  gmb        1.0077m    1.0077m  878.6400u  878.6400u    2.0646m  570.7887u
+  cdtot     97.4773f   97.4773f  168.1953f  168.1953f  239.8823f   58.4274f
+  cgtot    295.5125f  295.5125f  519.5319f  519.5319f  667.5409f  171.3297f
+  cstot    215.1870f  215.1870f  394.2124f  394.2124f  484.4466f  124.8754f
+  cbtot    180.7619f  180.7619f  337.9279f  337.9279f  424.7476f  106.8589f
+  cgs      236.2537f  236.2537f  436.2947f  436.2947f  531.4117f  136.8810f
+  cgd       44.4987f   44.4987f   69.0990f   69.0990f  103.5206f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =    0.000E+00 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       =   0.      0:a       =-303.2677m
+ +0:b       = 263.6773m 0:vds     = 900.0000m 0:vi1     =   0.     
+ +0:vi2     =   0.      0:vout    = 263.6773m 0:vp      =-598.7150m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m    0.         0.       900.0000m
+  current -694.0999u    0.         0.      -694.0999u
+  power    624.6899u    0.         0.       624.6899u
+
+     total voltage source power dissipation=    1.2494m       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
+  id       272.7742u  272.7742u -272.7742u -272.7742u  545.5483u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      598.7150m  598.7150m -636.3227m -636.3227m  596.7323m  596.7323m
+  vds      862.3923m  862.3923m -636.3227m -636.3227m  301.2850m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      456.2009m  456.2009m -455.4802m -455.4802m  460.6432m  458.2686m
+  vdsat    116.6302m  116.6302m -155.8057m -155.8057m  112.5061m  114.0173m
+  vod      142.5141m  142.5141m -180.8425m -180.8425m  136.0892m  138.4637m
+  beta      35.0711m   35.0711m   18.6210m   18.6210m   78.8073m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         3.6643m    3.6643m    2.7158m    2.7158m    7.5858m    2.0415m
+  gds       37.8186u   37.8186u   30.1901u   30.1901u  118.9027u   22.4676u
+  gmb        1.0238m    1.0238m  891.4643u  891.4643u    2.1252m  570.7887u
+  cdtot     98.2202f   98.2202f  168.1256f  168.1256f  234.3092f   58.4274f
+  cgtot    295.7048f  295.7048f  519.6779f  519.6779f  665.4067f  171.3297f
+  cstot    215.3310f  215.3310f  394.3230f  394.3230f  483.9940f  124.8754f
+  cbtot    181.4859f  181.4859f  337.8181f  337.8181f  420.8835f  106.8589f
+  cgs      236.5216f  236.5216f  436.5310f  436.5310f  531.1366f  136.8810f
+  cgd       44.5021f   44.5021f   69.0998f   69.0998f  101.0861f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =    1.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       = 100.0000m 0:a       =-303.2677m
+ +0:b       = 261.7883m 0:vds     = 900.0000m 0:vi1     = 100.0000m
+ +0:vi2     = 100.0000m 0:vout    = 261.7883m 0:vp      =-501.1649m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m  100.0000m    0.       900.0000m
+  current -704.5259u    0.         0.      -704.5259u
+  power    634.0733u    0.         0.       634.0733u
+
+     total voltage source power dissipation=    1.2681m       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
+  id       277.9872u  277.9872u -277.9872u -277.9872u  555.9744u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      601.1649m  601.1649m -638.2117m -638.2117m  596.7323m  596.7323m
+  vds      762.9532m  762.9532m -638.2117m -638.2117m  398.8351m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      456.9848m  456.9848m -455.4801m -455.4801m  459.8746m  458.2686m
+  vdsat    117.7069m  117.7069m -157.1425m -157.1425m  112.9975m  114.0173m
+  vod      144.1801m  144.1801m -182.7316m -182.7316m  136.8577m  138.4637m
+  beta      35.0786m   35.0786m   18.6113m   18.6113m   78.8033m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         3.7051m    3.7051m    2.7426m    2.7426m    7.7091m    2.0415m
+  gds       38.9447u   38.9447u   30.6380u   30.6380u   98.4911u   22.4676u
+  gmb        1.0349m    1.0349m  900.5349u  900.5349u    2.1589m  570.7887u
+  cdtot     99.0255f   99.0255f  168.0762f  168.0762f  230.9673f   58.4274f
+  cgtot    295.8498f  295.8498f  519.7752f  519.7752f  664.8817f  171.3297f
+  cstot    215.4402f  215.4402f  394.3969f  394.3969f  483.7872f  124.8754f
+  cbtot    182.2755f  182.2755f  337.7401f  337.7401f  417.8842f  106.8589f
+  cgs      236.7182f  236.7182f  436.6904f  436.6904f  531.0706f  136.8810f
+  cgd       44.5089f   44.5089f   69.1004f   69.1004f  100.5084f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =    2.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       = 200.0000m 0:a       =-303.2677m
+ +0:b       = 260.1394m 0:vds     = 900.0000m 0:vi1     = 200.0000m
+ +0:vi2     = 200.0000m 0:vout    = 260.1394m 0:vp      =-403.4561m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m  200.0000m    0.       900.0000m
+  current -713.7106u    0.         0.      -713.7106u
+  power    642.3395u    0.         0.       642.3395u
+
+     total voltage source power dissipation=    1.2847m       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
+  id       282.5795u  282.5795u -282.5795u -282.5795u  565.1590u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      603.4561m  603.4561m -639.8606m -639.8606m  596.7323m  596.7323m
+  vds      663.5956m  663.5956m -639.8606m -639.8606m  496.5439m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      457.7680m  457.7680m -455.4801m -455.4801m  459.1048m  458.2686m
+  vdsat    118.6839m  118.6839m -158.3108m -158.3108m  113.4904m  114.0173m
+  vod      145.6881m  145.6881m -184.3805m -184.3805m  137.6275m  138.4637m
+  beta      35.0856m   35.0856m   18.6029m   18.6029m   78.7992m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         3.7395m    3.7395m    2.7659m    2.7659m    7.8053m    2.0415m
+  gds       40.3841u   40.3841u   31.0306u   31.0306u   90.5689u   22.4676u
+  gmb        1.0444m    1.0444m  908.4242u  908.4242u    2.1851m  570.7887u
+  cdtot     99.9059f   99.9059f  168.0332f  168.0332f  228.2913f   58.4274f
+  cgtot    295.9875f  295.9875f  519.8561f  519.8561f  664.7577f  171.3297f
+  cstot    215.5438f  215.5438f  394.4584f  394.4584f  483.7304f  124.8754f
+  cbtot    183.1388f  183.1388f  337.6719f  337.6719f  415.2992f  106.8589f
+  cgs      236.8972f  236.8972f  436.8241f  436.8241f  531.1407f  136.8810f
+  cgd       44.5217f   44.5217f   69.1009f   69.1009f  100.3093f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =    3.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       = 300.0000m 0:a       =-303.2677m
+ +0:b       = 258.5993m 0:vds     = 900.0000m 0:vi1     = 300.0000m
+ +0:vi2     = 300.0000m 0:vout    = 258.5993m 0:vp      =-305.7015m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m  300.0000m    0.       900.0000m
+  current -722.3597u    0.         0.      -722.3597u
+  power    650.1237u    0.         0.       650.1237u
+
+     total voltage source power dissipation=    1.3002m       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
+  id       286.9041u  286.9041u -286.9041u -286.9041u  573.8081u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      605.7015m  605.7015m -641.4007m -641.4007m  596.7323m  596.7323m
+  vds      564.3008m  564.3008m -641.4007m -641.4007m  594.2985m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      458.5508m  458.5508m -455.4801m -455.4801m  458.3346m  458.2686m
+  vdsat    119.6335m  119.6335m -159.4030m -159.4030m  113.9843m  114.0173m
+  vod      147.1507m  147.1507m -185.9206m -185.9206m  138.3977m  138.4637m
+  beta      35.0925m   35.0925m   18.5950m   18.5950m   78.7952m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         3.7700m    3.7700m    2.7876m    2.7876m    7.8898m    2.0415m
+  gds       42.4909u   42.4909u   31.3987u   31.3987u   86.8130u   22.4676u
+  gmb        1.0527m    1.0527m  915.7691u  915.7691u    2.2081m  570.7887u
+  cdtot    100.8799f  100.8799f  167.9930f  167.9930f  225.9648f   58.4274f
+  cgtot    296.1360f  296.1360f  519.9283f  519.9283f  664.7725f  171.3297f
+  cstot    215.6536f  215.6536f  394.5134f  394.5134f  483.7455f  124.8754f
+  cbtot    184.0895f  184.0895f  337.6082f  337.6082f  412.9963f  106.8589f
+  cgs      237.0769f  237.0769f  436.9446f  436.9446f  531.2759f  136.8810f
+  cgd       44.5470f   44.5470f   69.1013f   69.1013f  100.2232f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =    4.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       = 400.0000m 0:a       =-303.2677m
+ +0:b       = 257.1185m 0:vds     = 900.0000m 0:vi1     = 400.0000m
+ +0:vi2     = 400.0000m 0:vout    = 257.1185m 0:vp      =-207.9651m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m  400.0000m    0.       900.0000m
+  current -730.7396u    0.         0.      -730.7396u
+  power    657.6656u    0.         0.       657.6656u
+
+     total voltage source power dissipation=    1.3153m       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
+  id       291.0940u  291.0940u -291.0940u -291.0940u  582.1880u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      607.9651m  607.9651m -642.8815m -642.8815m  596.7323m  596.7323m
+  vds      465.0836m  465.0836m -642.8815m -642.8815m  692.0349m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      459.3329m  459.3329m -455.4800m -455.4800m  457.5646m  458.2686m
+  vdsat    120.5975m  120.5975m -160.4542m -160.4542m  114.4788m  114.0173m
+  vod      148.6321m  148.6321m -187.4014m -187.4014m  139.1677m  138.4637m
+  beta      35.0992m   35.0992m   18.5875m   18.5875m   78.7912m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         3.7965m    3.7965m    2.8083m    2.8083m    7.9682m    2.0415m
+  gds       46.0543u   46.0543u   31.7539u   31.7539u   84.8722u   22.4676u
+  gmb        1.0599m    1.0599m  922.8092u  922.8092u    2.2294m  570.7887u
+  cdtot    101.9800f  101.9800f  167.9544f  167.9544f  223.8805f   58.4274f
+  cgtot    296.3214f  296.3214f  519.9948f  519.9948f  664.8456f  171.3297f
+  cstot    215.7830f  215.7830f  394.5642f  394.5642f  483.7971f  124.8754f
+  cbtot    185.1483f  185.1483f  337.5470f  337.5470f  410.9129f  106.8589f
+  cgs      237.2733f  237.2733f  437.0567f  437.0567f  531.4432f  136.8810f
+  cgd       44.6028f   44.6028f   69.1018f   69.1018f  100.1798f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+
+   *** source        0:vic =    5.000E-01 ***
+
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       = 500.0000m 0:a       =-303.2677m
+ +0:b       = 255.6746m 0:vds     = 900.0000m 0:vi1     = 500.0000m
+ +0:vi2     = 500.0000m 0:vout    = 255.6746m 0:vp      =-110.3270m
+ +0:vss     =-900.0000m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vds      0:vic      0:vid      0:vss     
+  volts    900.0000m  500.0000m    0.       900.0000m
+  current -738.9713u    0.         0.      -738.9713u
+  power    665.0742u    0.         0.       665.0742u
+
+     total voltage source power dissipation=    1.3301m       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    8.1000k
+  v drop     1.2033 
+  current  148.5516u
+  power    178.7473u
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e+       0:e-      
+  volts      0.         0.     
+  current    0.         0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:n_18     0:n_18     0:p_18     0:p_18     0:n_18     0:n_18    
+ region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
+  id       295.2099u  295.2099u -295.2099u -295.2099u  590.4197u  148.5516u
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      610.3270m  610.3270m -644.3254m -644.3254m  596.7323m  596.7323m
+  vds      366.0015m  366.0015m -644.3254m -644.3254m  789.6730m  596.7323m
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth      460.1140m  460.1140m -455.4800m -455.4800m  456.7954m  458.2686m
+  vdsat    121.6284m  121.6284m -161.4801m -161.4801m  114.9735m  114.0173m
+  vod      150.2130m  150.2130m -188.8454m -188.8454m  139.9369m  138.4637m
+  beta      35.1061m   35.1061m   18.5801m   18.5801m   78.7872m   20.3799m
+  gam eff  594.4451m  594.4451m  526.5434m  526.5434m  594.4564m  594.4303m
+  gm         3.8167m    3.8167m    2.8285m    2.8285m    8.0430m    2.0415m
+  gds       53.4171u   53.4171u   32.1014u   32.1014u   83.8562u   22.4676u
+  gmb        1.0654m    1.0654m  929.6534u  929.6534u    2.2496m  570.7887u
+  cdtot    103.2850f  103.2850f  167.9169f  167.9169f  221.9865f   58.4274f
+  cgtot    296.6098f  296.6098f  520.0571f  520.0571f  664.9461f  171.3297f
+  cstot    215.9564f  215.9564f  394.6118f  394.6118f  483.8680f  124.8754f
+  cbtot    186.3527f  186.3527f  337.4872f  337.4872f  409.0110f  106.8589f
+  cgs      237.5126f  237.5126f  437.1625f  437.1625f  531.6268f  136.8810f
+  cgd       44.7488f   44.7488f   69.1022f   69.1022f  100.1553f   25.8282f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******               
+ ******  
+ .title nmos
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
+ cpu MHz	: 1600.000
+  
+ OS:
+ Linux version 2.6.32-358.23.2.el6.x86_64 (mockbuild@c6b9.bsys.dev.centos.org) (
+ gcc version 4.4.7 20120313 (Red Hat 4.4.7-3) (GCC) ) #1 SMP Wed Oct 16 18:37:12
+  UTC 2013
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      11 # elements   =      14
+  # resistors   =       1 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       2
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          86
+  ac analysis        0.03        9911        9911
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         95.59 megabytes
+           total cpu time            0.05 seconds
+           total elapsed time        0.50 seconds
+           job started at     14:29:18 12/03/2013
+           job ended   at     14:29:19 12/03/2013
+
+
+ lic: Release hspice token(s) 

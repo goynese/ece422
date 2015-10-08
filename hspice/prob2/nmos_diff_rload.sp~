@@ -1,0 +1,47 @@
+** Eddie's Problem 2 netlist file.
+
+.title NMOS
+.options post
+
+** include model file
+.inc ../par0.18um.net
+.param M1Width = 60u
+.param M2Width = 60u
+.param M3Width = 120u
+.param M4Width = 120u
+.param M5Width = 260u
+.param M6Width = 65u
+.param Vic =-0.5
+
+**Components
+M1 g34 vin1 b 0 N_18 W=60u L=0.5u M=1 AD=0.6u*M1Width AS=0.6u*M1Width PS=1.2u+2*M1Width PD=1.2u+2*M1Width
+M2 vout vin2 b 0 N_18 W=60u L=0.5u M=1 AD=0.6u*M2Width AS=0.6u*M2Width PS=1.2u+2*M2Width PD=1.2u+2*M2Width
+M3 g34 g34 vcc 0 P_18 W=120u L=0.5u M=1 AD=0.6u*M3Width AS=0.6u*M3Width PS=1.2u+2*M3Width PD=1.2u+2*M3Width
+M4 vout g34 vcc 0 P_18 W=120u L=0.5u M=1 AD=0.6u*M4Width AS=0.6u*M4Width PS=1.2u+2*M4Width PD=1.2u+2*M4Width
+M5 b g56 vdd 0 N_18 W=260u L=1u M=1 AD=0.6u*M5Width AS=0.6u*M5Width PS=1.2u+2*M5Width PD=1.2u+2*M5Width
+M6 g56 g56 vdd 0 N_18 W=65u L=1u M=1 AD=0.6u*M6Width AS=0.6u*M6Width PS=1.2u+2*M6Width PD=1.2u+2*M6Width
+
+
+R1 vcc g56 8560
+
+C1 vout vdd 1e-12
+
+
+**Sources
+Vcc1  vcc 0 DC=0.9V 
+Vdd1  vdd 0 DC=-0.9V
+
+
+Vin1x vin1 0 DC=-.24V AC=0.5,0
+Vin2x vin2 0 DC=-.24V AC=0.5,180
+
+**Controls
+.op
+.pz v(vout) vin1x
+.ac dec 100 1e3 1e9
+.print dc i(M2) v(vout)
+.print ac vdb(vout)
+.plot ac vdb(vout)
+.ac dec 100 1e3 1e12 sweep Vic -0.5 0.5 0.1
+
+.end

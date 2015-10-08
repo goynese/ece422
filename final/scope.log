@@ -1,0 +1,16 @@
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /nfs/stak/students/g/goynese/ECE422/Final/final.ac0 1 openonly
+# PF:1
+pf:read PF:1 v(out)
+# WF:1:1
+Graph addsignal {WF:1:1 WF:1:1} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+ScopeSigMgr:Unload 0 {{(1) final.ac0}}
+pf:read PF:1 vdb(out)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+ScopeSigMgr:Unload 0 {{(1) final.ac0}}
+ScopeSigMgr:Unload 0 {{(1) final.ac0}}
+ScopeSigMgr:Unload 0 {{(1) final.ac0}}
+ScopeSigMgr:Unload 0 {{(1) final.ac0}}

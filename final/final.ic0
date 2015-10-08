@@ -1,0 +1,28 @@
+* "simulator" "HSPICE" 
+* "version" "F-2011.09-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "16:07:08 12/08/2013 "
+* "netlist" "final.sp "
+* "runtitle" "nmos"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   0.            
++ 2 =   0.            
++ c1 = 316.0963m       
++ drain1 =-212.4097m       
++ drain2 =-614.9830m       
++ drain5 = 316.0963m       
++ drain6 = 316.0963m       
++ e+ =   0.            
++ e- =   0.            
++ gate3 =   0.            
++ gate4 =   0.            
++ oout =   0.            
++ out = 356.9156m       
++ vdd = 900.0000m       
++ vss =-900.0000m       
+***   END: Saved Operating Point ***                     

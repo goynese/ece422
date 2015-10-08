@@ -1,0 +1,242 @@
+***** HSPICE -- F-2011.09-SP2 32-BIT (Feb 27 2012) linux ******
+ Input File: hw2.sp
+ lic:
+ lic: FLEXlm: v10.8
+ lic: USER:   goynese              HOSTNAME: kec1130-14.engr.oregonstate.edu
+ lic: HOSTID: 24be0511c109         PID:      8954
+ lic: Using FLEXlm license file:
+ lic: 7188@license.eecs.oregonstate.edu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 11-aug-2014/2013.03
+ lic: 6(in_use)/50(total) FLOATING license(s) on SERVER license.eecs.oregonstate
+ lic:
+ init: begin read circuit files,  cpu clock=  5.00E-02
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/ad
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/ad
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/behave
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/bjt
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/burr_brn
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/comlinear
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/dio
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/fet
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/lin_tech
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/pci
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/signet
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/ti
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/tline
+       option search   = /usr/local/apps/synopsys/hspice_vF-2011.09-SP2/h
+                         spice/parts/xilinx
+       option runlvl
+       option post
+ init: end read circuit files,  cpu clock=  6.00E-02 memory=    149 kb
+ init: begin check errors,  cpu clock=  6.00E-02
+ init: end check errors,  cpu clock=  6.00E-02 memory=    163 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  6.00E-02
+       establish matrix -- done,  cpu clock=  6.00E-02 memory=    168 kb
+       re-order matrix -- done,  cpu clock=  6.00E-02 memory=    167 kb
+ init: end setup matrix,  cpu clock=  6.00E-02 memory=    183 kb
+ dcop: begin dcop,  cpu clock=  6.00E-02
+ dcop: end dcop,  cpu clock=  6.00E-02 memory=    183 kb  tot_iter=      21
+ sweep: voltage         voltage1         begin, #sweeps =  11
+ voltage: vic             =   -5.00E-01
+ dcop: begin dcop,  cpu clock=  6.00E-02
+ dcop: end dcop,  cpu clock=  6.00E-02 memory=    183 kb  tot_iter=      24
+ output: hw2.ac0
+ sweep: ac ac1    begin, #sweeps= 901 cpu clock=  6.00E-02
+ ac: frequency=    1.02E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac1    end,  cpu clock=  7.00E-02 memory=    191 kb
+ voltage: vic             =   -4.00E-01
+ dcop: begin dcop,  cpu clock=  7.00E-02
+ dcop: end dcop,  cpu clock=  7.00E-02 memory=    183 kb  tot_iter=      32
+ output: hw2.ac0
+ sweep: ac ac2    begin, #sweeps= 901 cpu clock=  7.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac2    end,  cpu clock=  7.00E-02 memory=    191 kb
+ voltage: vic             =   -3.00E-01
+ dcop: begin dcop,  cpu clock=  7.00E-02
+ dcop: end dcop,  cpu clock=  7.00E-02 memory=    183 kb  tot_iter=      38
+ output: hw2.ac0
+ sweep: ac ac3    begin, #sweeps= 901 cpu clock=  7.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac3    end,  cpu clock=  8.00E-02 memory=    191 kb
+ voltage: vic             =   -2.00E-01
+ dcop: begin dcop,  cpu clock=  8.00E-02
+ dcop: end dcop,  cpu clock=  8.00E-02 memory=    183 kb  tot_iter=      44
+ output: hw2.ac0
+ sweep: ac ac4    begin, #sweeps= 901 cpu clock=  8.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac4    end,  cpu clock=  8.00E-02 memory=    191 kb
+ voltage: vic             =   -1.00E-01
+ dcop: begin dcop,  cpu clock=  8.00E-02
+ dcop: end dcop,  cpu clock=  8.00E-02 memory=    183 kb  tot_iter=      50
+ output: hw2.ac0
+ sweep: ac ac5    begin, #sweeps= 901 cpu clock=  8.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac5    end,  cpu clock=  8.00E-02 memory=    191 kb
+ voltage: vic             =    0.00E+00
+ dcop: begin dcop,  cpu clock=  8.00E-02
+ dcop: end dcop,  cpu clock=  8.00E-02 memory=    183 kb  tot_iter=      56
+ output: hw2.ac0
+ sweep: ac ac6    begin, #sweeps= 901 cpu clock=  8.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac6    end,  cpu clock=  8.00E-02 memory=    191 kb
+ voltage: vic             =    1.00E-01
+ dcop: begin dcop,  cpu clock=  8.00E-02
+ dcop: end dcop,  cpu clock=  9.00E-02 memory=    183 kb  tot_iter=      62
+ output: hw2.ac0
+ sweep: ac ac7    begin, #sweeps= 901 cpu clock=  9.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac7    end,  cpu clock=  9.00E-02 memory=    191 kb
+ voltage: vic             =    2.00E-01
+ dcop: begin dcop,  cpu clock=  9.00E-02
+ dcop: end dcop,  cpu clock=  9.00E-02 memory=    183 kb  tot_iter=      68
+ output: hw2.ac0
+ sweep: ac ac8    begin, #sweeps= 901 cpu clock=  9.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac8    end,  cpu clock=  9.00E-02 memory=    191 kb
+ voltage: vic             =    3.00E-01
+ dcop: begin dcop,  cpu clock=  9.00E-02
+ dcop: end dcop,  cpu clock=  9.00E-02 memory=    183 kb  tot_iter=      74
+ output: hw2.ac0
+ sweep: ac ac9    begin, #sweeps= 901 cpu clock=  9.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac9    end,  cpu clock=  9.00E-02 memory=    191 kb
+ voltage: vic             =    4.00E-01
+ dcop: begin dcop,  cpu clock=  9.00E-02
+ dcop: end dcop,  cpu clock=  9.00E-02 memory=    183 kb  tot_iter=      80
+ output: hw2.ac0
+ sweep: ac ac10   begin, #sweeps= 901 cpu clock=  9.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac10   end,  cpu clock=  9.00E-02 memory=    191 kb
+ voltage: vic             =    5.00E-01
+ dcop: begin dcop,  cpu clock=  9.00E-02
+ dcop: end dcop,  cpu clock=  9.00E-02 memory=    183 kb  tot_iter=      86
+ output: hw2.ac0
+ sweep: ac ac11   begin, #sweeps= 901 cpu clock=  9.00E-02
+ ac: frequency=    1.00E+03
+ ac: frequency=    7.94E+03
+ ac: frequency=    6.31E+04
+ ac: frequency=    5.01E+05
+ ac: frequency=    3.98E+06
+ ac: frequency=    3.16E+07
+ ac: frequency=    2.51E+08
+ ac: frequency=    2.00E+09
+ ac: frequency=    1.58E+10
+ ac: frequency=    1.26E+11
+ ac: frequency=    1.00E+12
+ sweep: ac ac11   end,  cpu clock=  1.00E-01 memory=    191 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

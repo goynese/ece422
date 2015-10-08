@@ -1,0 +1,180 @@
+Mdi:ArrangeIcons
+wm geometry . 900x785+2+86
+Mdi:ArrangeIcons
+wm geometry . 900x785+27+86
+Mdi:ArrangeIcons
+wm geometry . 900x785+46+83
+Mdi:ArrangeIcons
+wm geometry . 900x785+65+81
+Mdi:ArrangeIcons
+wm geometry . 900x785+86+79
+Mdi:ArrangeIcons
+wm geometry . 900x785+109+76
+Mdi:ArrangeIcons
+wm geometry . 900x785+132+73
+Mdi:ArrangeIcons
+wm geometry . 900x785+157+70
+Mdi:ArrangeIcons
+wm geometry . 900x785+182+68
+Mdi:ArrangeIcons
+wm geometry . 900x785+209+63
+Mdi:ArrangeIcons
+wm geometry . 900x785+234+61
+Mdi:ArrangeIcons
+wm geometry . 900x785+255+58
+Mdi:ArrangeIcons
+wm geometry . 900x785+284+56
+Mdi:ArrangeIcons
+wm geometry . 900x785+309+53
+Mdi:ArrangeIcons
+wm geometry . 900x785+330+51
+Mdi:ArrangeIcons
+wm geometry . 900x785+351+49
+Mdi:ArrangeIcons
+wm geometry . 900x785+372+47
+Mdi:ArrangeIcons
+wm geometry . 900x785+389+47
+Mdi:ArrangeIcons
+wm geometry . 900x785+404+45
+Mdi:ArrangeIcons
+wm geometry . 900x785+417+45
+Mdi:ArrangeIcons
+wm geometry . 900x785+428+43
+Mdi:ArrangeIcons
+wm geometry . 900x785+435+43
+Mdi:ArrangeIcons
+wm geometry . 900x785+440+43
+Mdi:ArrangeIcons
+wm geometry . 900x785+441+42
+Mdi:ArrangeIcons
+wm geometry . 900x785+442+45
+Mdi:ArrangeIcons
+wm geometry . 900x785+444+47
+Mdi:ArrangeIcons
+wm geometry . 900x785+445+48
+Mdi:ArrangeIcons
+wm geometry . 900x785+447+50
+Mdi:ArrangeIcons
+wm geometry . 900x785+449+52
+Mdi:ArrangeIcons
+wm geometry . 900x785+451+54
+Mdi:ArrangeIcons
+wm geometry . 900x785+454+56
+Mdi:ArrangeIcons
+wm geometry . 900x785+456+58
+Mdi:ArrangeIcons
+wm geometry . 900x785+457+59
+Mdi:ArrangeIcons
+wm geometry . 900x785+460+61
+Mdi:ArrangeIcons
+wm geometry . 900x785+461+62
+Mdi:ArrangeIcons
+wm geometry . 900x785+463+63
+Mdi:ArrangeIcons
+wm geometry . 900x785+466+65
+Mdi:ArrangeIcons
+wm geometry . 900x785+467+66
+Mdi:ArrangeIcons
+wm geometry . 900x785+470+68
+Mdi:ArrangeIcons
+wm geometry . 900x785+471+69
+Mdi:ArrangeIcons
+wm geometry . 900x785+473+70
+Mdi:ArrangeIcons
+wm geometry . 900x785+475+71
+Mdi:ArrangeIcons
+wm geometry . 900x785+476+72
+Mdi:ArrangeIcons
+wm geometry . 900x785+478+74
+Mdi:ArrangeIcons
+wm geometry . 900x785+480+75
+Mdi:ArrangeIcons
+wm geometry . 900x785+481+76
+ScopeSigMgr:loadpffile /nfs/stak/students/g/goynese/ECE422/hw5/prob1/nmos_diff_rload2.ac0 1 openonly
+# PF:1
+pf:read PF:1 v(drain)
+# WF:1:1
+Graph addsignal {WF:1:1 WF:1:1} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+pf:read PF:1 v(drain)
+# WF:1:1
+Graph addsignal {WF:1:1 WF:1:1} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal2 Signal3
+pf:read PF:1 v(gate)
+# WF:1:2
+Graph addsignal {WF:1:2 WF:1:2} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal4 Signal5
+pf:read PF:1 v(vin1)
+# WF:1:3
+Graph addsignal {WF:1:3 WF:1:3} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal6 Signal7
+pf:read PF:1 v(vin1)
+# WF:1:3
+Graph addsignal {WF:1:3 WF:1:3} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal8 Signal9
+pf:read PF:1 v(0)
+# WF:1:4
+Graph addsignal {WF:1:4 WF:1:4} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal10 Signal11
+pf:read PF:1 i(vin1x)
+# WF:1:5
+Graph addsignal {WF:1:5 WF:1:5} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal12 Signal13
+pf:read PF:1 i(vddx)
+# WF:1:6
+Graph addsignal {WF:1:6 WF:1:6} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal14 Signal15
+pf:read PF:1 v(gate)
+# WF:1:2
+Graph addsignal {WF:1:2 WF:1:2} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal16 Signal17
+pf:read PF:1 v(gate)
+# WF:1:2
+Graph addsignal {WF:1:2 WF:1:2} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal18 Signal19
+pf:read PF:1 v(drain)
+# WF:1:1
+Graph addsignal {WF:1:1 WF:1:1} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal20 Signal21
+pf:read PF:1 v(vdd)
+# WF:1:7
+Graph addsignal {WF:1:7 WF:1:7} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal22 Signal23
+pf:read PF:1 v(vin1)
+# WF:1:3
+Graph addsignal {WF:1:3 WF:1:3} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal24 Signal25
+pf:read PF:1 vdb(drain)
+# WF:1:8
+Graph addsignal WF:1:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal26
+ScopeSigMgr:Unload 0 {{(1) nmos_diff_rload2.ac0}}
+wm geometry .sigmgr._PF:1 231x341+961+600
+ScopeSigMgr:Unload 0 {{(1) nmos_diff_rload2.ac0}}
+Graph0 delsignal Signal0
+Graph0 delsignal Signal1
+Graph0 delsignal Signal2
+Graph0 delsignal Signal3
+Graph0 delsignal Signal4
+Graph0 delsignal Signal5
+Graph0 delsignal Signal6
+Graph0 delsignal Signal7
+Graph0 delsignal Signal8
+Graph0 delsignal Signal9
+Graph0 delsignal Signal10
+Graph0 delsignal Signal11
+Graph0 delsignal Signal12
+Graph0 delsignal Signal13
+Graph0 delsignal Signal14
+Graph0 delsignal Signal15
+Graph0 delsignal Signal16
+Graph0 delsignal Signal17
+Graph0 delsignal Signal18
+Graph0 delsignal Signal19
+Graph0 delsignal Signal20
+Graph0 delsignal Signal21
+Graph0 delsignal Signal22
+Graph0 delsignal Signal23
+Graph0 delsignal Signal24
+Graph0 delsignal Signal25
+Graph0 delsignal Signal26

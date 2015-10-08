@@ -1,0 +1,17 @@
+* "simulator" "HSPICE" 
+* "version" "F-2011.09-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "19:25:40 12/01/2013 "
+* "netlist" "nmos_diff_rload.sp "
+* "runtitle" ".title nmos"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ drain =   1.2209        
++ gate = 600.0000m       
++ vdd =   1.8000        
++ vin1 = 600.0000m       
+***   END: Saved Operating Point ***                     

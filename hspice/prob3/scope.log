@@ -1,0 +1,63 @@
+Graph:SetCMap 2
+ScopeSigMgr:loadpffile /nfs/stak/students/g/goynese/ECE422/hw5/prob2/nmos_diff_rload.ac1 1 openonly
+# PF:1
+ScopeSigMgr:Unload 0 {{(1) nmos_diff_rload.ac1 [11]}}
+ScopeSigMgr:loadpffile /nfs/stak/students/g/goynese/ECE422/hw5/prob2/hw2.ac0 1 openonly
+# PF:2
+pf:read PF:2 v(vss) v(vp)
+# WF:2:1 WF:2:2
+Graph addsignal {WF:2:1 WF:2:1 WF:2:2 WF:2:2} -region {new new new new} -yview {cphasedeg(y) db(y) cphasedeg(y) db(y)} -xview {real(x) real(x) real(x) real(x)} -tracehi {2 2 2 2}
+# Signal0 Signal1 Signal2 Signal3
+Graph:DSel
+Graph:Select Graph0
+ScopeSigMgr:Unload 0 {{(1) hw2.ac0 [11]}}
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph itemselect AxisY(3,0) add
+# AxisY(3,0)
+Graph:DSel
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+Graph:DSel
+Graph:Select Graph0
+Mdi:Resize 713 660
+Mdi:Move 5 5
+Graph:DSel
+wm geometry .sigmgr._PF:2 231x341+959+600
+wm geometry .sigmgr._PF:2 231x341+957+600
+wm geometry .sigmgr._PF:2 231x341+955+600
+wm geometry .sigmgr._PF:2 231x341+952+600
+wm geometry .sigmgr._PF:2 231x341+950+598
+wm geometry .sigmgr._PF:2 231x341+947+597
+wm geometry .sigmgr._PF:2 231x341+942+595
+wm geometry .sigmgr._PF:2 231x341+936+593
+wm geometry .sigmgr._PF:2 231x341+930+591
+wm geometry .sigmgr._PF:2 231x341+925+588
+wm geometry .sigmgr._PF:2 231x341+917+586
+wm geometry .sigmgr._PF:2 231x341+909+583
+wm geometry .sigmgr._PF:2 231x341+904+580
+wm geometry .sigmgr._PF:2 231x341+904+578
+wm geometry .sigmgr._PF:2 231x341+884+578
+wm geometry .sigmgr._PF:2 231x341+874+578
+wm geometry .sigmgr._PF:2 231x341+866+578
+wm geometry .sigmgr._PF:2 231x341+859+578
+wm geometry .sigmgr._PF:2 231x341+855+578
+wm geometry .sigmgr._PF:2 231x341+851+578
+wm geometry .sigmgr._PF:2 231x341+847+578
+wm geometry .sigmgr._PF:2 231x341+843+578
+wm geometry .sigmgr._PF:2 231x341+842+578
+wm geometry .sigmgr._PF:2 231x341+841+578
+wm geometry .sigmgr._PF:2 231x341+840+578
+wm geometry .sigmgr._PF:2 231x341+839+578
+wm geometry .sigmgr._PF:2 231x341+838+562
+wm geometry .sigmgr._PF:2 231x341+838+561
+wm geometry .sigmgr._PF:2 231x341+837+559
+wm geometry .sigmgr._PF:2 231x341+836+558
+wm geometry .sigmgr._PF:2 231x341+835+558
+wm geometry .sigmgr._PF:2 231x341+834+558
+Mdi:ArrangeIcons
+wm geometry . 900x785+2+111
+wm geometry .sigmgr 376x204+518+216
+wm geometry .sigmgr._PF:2 231x341+836+584

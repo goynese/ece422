@@ -1,0 +1,23 @@
+* "simulator" "HSPICE" 
+* "version" "F-2011.09-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "14:29:18 12/03/2013 "
+* "netlist" "hw2.sp "
+* "runtitle" ".title nmos"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   0.            
++ 2 =-500.0000m       
++ a =-303.2677m       
++ b = 489.1387m       
++ vds = 900.0000m       
++ vi1 =-500.0000m       
++ vi2 =-500.0000m       
++ vout = 489.1387m       
++ vp =-898.5954m       
++ vss =-900.0000m       
+***   END: Saved Operating Point ***                     
